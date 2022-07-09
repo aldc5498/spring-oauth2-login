@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-oauth2-demo
+
+#database properties
+  datasource:
+    url: jdbc:mysql://localhost:3306/oauthDB?createDatabaseIfNotExist=true
+    username: test1
+    password: test1234@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+    show-sql: true
+
+#server properties
+server:
+  port: 8081
+
+
